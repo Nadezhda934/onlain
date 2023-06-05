@@ -1,0 +1,43 @@
+header{
+    @extend %container;
+    padding: 30px 0;
+    .logo{
+        display: flex;
+        align-items: baseline;
+        h2{
+            @include font(700);
+            text-transform:uppercase ;
+            font-size: 30px;
+        }
+        .circle{
+            width: 8px;
+            height: 8px;
+            border-radius: 100;
+            background-color: $orange;
+        }
+    }
+    .nav-container{
+        @extend %container;
+        .nav-links{
+            a{
+                @include font(500);
+                text-transform: uppercase;
+                color: $black;
+                font-size: 16px;
+                margin-right: 20px;
+                transition: 0.4s;
+                &:hover{
+                    color: $orange;
+                }
+            }
+
+        }
+        .nav-icons{
+            padding-left: 20px;
+            border-left: 1px solid $gray;
+            svg:first-child{
+                margin-right:10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.basket{
+    .wrapper{
+        p{
+            @include font(400);
+            text-transform: capitalize;
+            color: #505050;
+        }
+        .table-basket{
+            border: 1px solid $gray;
+            .columns-name{
+                @extend %container;
+                padding: 20px 0;
+                border-bottom: 1px solid $gray;
+            }
+            p{
+                text-align: center;
+            }
+            #first{
+                width: 45%;
+            }
+            #second,#third,#forth{
+                width: 15%;
+            }
+            #fifth{
+                width: 10%;
+            }
+            .products-container{
+                padding: 30px 0;
+                .item{
+                    @extend %container;
+                    #first{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        p{
+                            text-align: left;
+                        }
+                        .item-info{
+                            width: 48%;
+                            .settings{
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                margin-top: 15px;
+                                .ellipse{
+                                    width: 16px;
+                                    height: 16px;
+                                    border-radius: 100%;
+                                }
+                                .size{
+                                    color: $mainBlack;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                    #third{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .delete{
+                        color: $mainBlack;
+                        cursor: pointer;
+                        transition: 0.5s;
+                        font-weight: 700;
+                        -webkit-user-select: none;
+                        &:hover{
+                            color: $orange;
+                        }
+                    }
+                    margin-bottom: 30px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

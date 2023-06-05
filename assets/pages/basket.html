@@ -1,0 +1,138 @@
+
+    <section class="page-title">
+        <h2>shopping cart</h2>
+        <div class="source">
+            <a href="#">Home</a>
+            <span>/</span>
+            <a href="#">Shopping cart</a>
+        </div>
+    </section>
+    
+    <section class="basket">
+        <div class="wrapper">
+            <div class="table-basket">
+                <div class="columns-name">
+                    <div class="column" id="first">
+                        <p>Product</p>
+                    </div>
+                    <div class="column" id="second">
+                        <p>price</p>
+                    </div>
+                    <div class="column" id="third">
+                        <p>quantity</p>
+                    </div>
+                    <div class="column" id="forth">
+                        <p>total</p>
+                    </div>
+                    <div class="column" id="fifth"></div>
+                </div>
+                <div class="products-container">
+                    <div class="item">
+                        <div class="column" id="first">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="./assets/img/t-shirt.png" alt="">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <p class="name">T-shirt summer collection</p>
+                                <div class="settings">
+                                    <div class="ellipse" id="black"></div>
+                                    <p class="size">xl</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" id="second">
+                            <p>$45</p>
+                        </div>
+                        <div class="column" id="third">
+                            <div class="counter">
+                                <input type="button" value="-" class="btn minus" onclick="changeCount('minus',this)">
+                                <p class="count">1</p>
+                                <input type="button" value="+" class="btn plus" onclick="changeCount('plus',this)">
+                            </div>
+                        </div>
+                        <div class="column" id="forth">
+                            <p>$45</p>
+                        </div>
+                        <div class="column" id="fifth">
+                            <p class="delete" onclick="deleteProduct()">x</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="column" id="first">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="./assets/img/t-shirt.png" alt="">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <p class="name">T-shirt summer collection</p>
+                                <div class="settings">
+                                    <div class="ellipse" id="black"></div>
+                                    <p class="size">xl</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" id="second">
+                            <p>$45</p>
+                        </div>
+                        <div class="column" id="third">
+                            <div class="counter">
+                                <input type="button" value="-" class="btn minus" onclick="changeCount('minus',this)">
+                                <p class="count">1</p>
+                                <input type="button" value="+" class="btn plus" onclick="changeCount('plus',this)">
+                            </div>
+                        </div>
+                        <div class="column" id="forth">
+                            <p>$45</p>
+                        </div>
+                        <div class="column" id="fifth">
+                            <p class="delete">x</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="column" id="first">
+                            <div class="card">
+                                <div class="cover">
+                                    <img src="./assets/img/t-shirt.png" alt="">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <p class="name">T-shirt summer collection</p>
+                                <div class="settings">
+                                    <div class="ellipse" id="black"></div>
+                                    <p class="size">xl</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column" id="second">
+                            <p>$45</p>
+                        </div>
+                        <div class="column" id="third">
+                            <div class="counter">
+                                <input type="button" value="-" class="btn minus" onclick="changeCount('minus',this)">
+                                <p class="count">1</p>
+                                <input type="button" value="+" class="btn plus" onclick="changeCount('plus',this)">
+                            </div>
+                        </div>
+                        <div class="column" id="forth">
+                            <p>$45</p>
+                        </div>
+                        <div class="column" id="fifth">
+                            <p class="delete">x</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <p class="clear">clear all</p>
+                <p class="update">update cart</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/basket.js"></script>

@@ -1,0 +1,126 @@
+.product{
+    .wrapper{
+        @extend %container;
+        .product-photos{
+            width: 40%;
+            .cover{
+                @include cover(100%);
+                background-color: $lightgray;
+                img{
+                    object-fit: contain;
+                    scale: 0.85;
+                }
+            }
+            .container{
+                @extend %container;
+                margin-top: 3.5%;
+                .cover{
+                    width: 31%;
+                    padding-top: 31%;
+                }
+            }
+        }
+        .product-info{
+            width: 55%;
+            .name{
+                @extend %container;
+                h1{
+                    @include font(900);
+                    text-transform: uppercase;
+                    font-size: 36px;
+                    &.price{
+                        color: $orange;
+                    }
+                }
+            }
+            .description{
+                @include font(400);
+                text-align: justify;
+                color: #505050;
+                margin: 20px 0;
+            }
+            .options{
+                @extend %container;
+                .size,.color{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                }
+                .size{
+                    p{
+                        color: #505050;
+                        @include font(500);
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        // border-bottom: 1px solid transparent;
+                        &.active{
+                            color: $black;
+                            border-bottom: 1px solid $black;
+                        }
+                    }
+                }
+                .color{
+                    .circle-container{
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .circle{
+                            width: 18px;
+                            height: 18px;
+                            border-radius: 100%;
+                            cursor: pointer;
+                            &.active{
+                                width: 12px;
+                                height: 12px;
+                                box-shadow: 0 0 6px 4px rgba($color: #000000, $alpha: 0.2);
+                            }
+                        }
+                    }
+                }
+            }
+            .card{
+                box-shadow: 0 0 6px 4px rgba($color: #000000, $alpha: 0.05);
+                padding: 25px;
+                margin-top: 30px;
+                .counter-container{
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    
+                }
+            }
+        }
+    }
+}
+.counter{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    .btn{
+        padding: 6px 12px;
+        @include font(500);
+        color: #505050;
+        border-radius: 4px;
+        transition: 0.4s;
+        &:hover{
+            background-color: $orange;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+    .minus{
+        border-radius:4px 0 0 4px;
+    }
+    .plus{
+        border-radius: 0 4px 4px 0;
+    }
+    .count{
+        @include font(500);
+        width: 40px;
+        text-align: center;
+    }
+}

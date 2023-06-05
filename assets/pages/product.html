@@ -1,0 +1,78 @@
+
+    <section class="page-title">
+        <h2>T-shirt</h2>
+        <div class="source">
+            <a href="#">Home</a>
+            <span>/</span>
+            <a href="#">Shop</a>
+            <span>/</span>
+            <a href="#">Men</a>
+            <span>/</span>
+            <a href="#">T-shirt</a>
+        </div>
+    </section>
+    
+    <section class="product">
+        <div class="wrapper">
+            <div class="product-photos">
+                <div class="cover">
+                    <img src="./assets/img/t-shirt.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="cover">
+                        <img src="./assets/img/t-shirt.png" alt="">
+                    </div>
+                    <div class="cover">
+                        <img src="./assets/img/t-shirt.png" alt="">
+                    </div>
+                    <div class="cover">
+                        <img src="./assets/img/t-shirt.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="name">
+                    <h1>T-shirt</h1>
+                    <h1 class="price">$24.00</h1>
+                </div>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dignissimos, aliquam fugiat alias, eum error aperiam minus vel accusantium inventore quos fuga sed perferendis corporis quo cupiditate assumenda explicabo incidunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio animi harum labore, eos totam sunt nisi. Excepturi velit commodi repellat molestias cum dolorem delectus consequatur odio, repudiandae quia dolor maxime?</p>
+                <div class="options">
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <p onclick="setSize(event)">s</p>
+                        <p onclick="setSize(event)">m</p>
+                        <p onclick="setSize(event)" class="active">l</p>
+                        <p onclick="setSize(event)">xl</p>
+                        <p onclick="setSize(event)">xxl</p>
+                    </div>
+                    <div class="color">
+                        <h3>color:</h3>
+                        <div class="circle-container">
+                            <div class="circle active" onclick="setColor(event)" id="black"></div>
+                        </div>
+                        <div class="circle-container">
+                            <div class="circle" onclick="setColor(event)" id="orange"></div>
+                        </div>
+                        <div class="circle-container">
+                            <div class="circle" onclick="setColor(event)" id="pink"></div>
+                        </div>
+                        <div class="circle-container">
+                            <div class="circle" onclick="setColor(event)" id="blue"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="counter-container">
+                        <h3>Quantity:</h3>
+                        <div class="counter">
+                            <input type="button" value="-" class="btn minus" onclick="changeCount('minus',this)">
+                            <p class="count">1</p>
+                            <input type="button" value="+" class="btn plus" onclick="changeCount('plus',this)">
+                        </div>
+                    </div>
+                    <div class="to-basket"></div>
+                </div>
+            </div>
+        </div>
+    </section>

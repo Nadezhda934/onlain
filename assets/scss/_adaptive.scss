@@ -1,0 +1,31 @@
+@media screen and (max-width: 900px) {
+    .wrapper{
+        padding: 0 16px;
+    }
+    header .nav-links{
+        display: none;
+
+        .burger-menu{
+            display: none;
+            .line{
+                width: 20px;
+                height: 2px;
+                background-color: $black;
+            }
+        }
+    }
+    header{
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .burger-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
